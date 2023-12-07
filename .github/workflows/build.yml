@@ -103,7 +103,7 @@ jobs:
               BUILD_TAGS+=("latest")
           fi
 
-          if [[ "${{ matrix.is_gtst_version }}" == "true" ]] && \
+          if [[ "${{ matrix.is_gts_version }}" == "true" ]] && \
              [[ "${{ matrix.is_latest_driver }}" == "true" ]]; then
               BUILD_TAGS+=("gts-${TIMESTAMP}")
               BUILD_TAGS+=("gts")
